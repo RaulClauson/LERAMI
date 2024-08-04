@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 .title_Projects h3{
-    font-family: Telegraf;
+    font-family: PP Telegraf;
     font-weight: 400;
     font-style: normal;
     font-size: clamp(3rem, 2.5714rem + 2.1429vw, 6rem);

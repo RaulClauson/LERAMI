@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Telegraf;
+    font-family: PP Telegraf;
     font-style: normal;
     font-weight: 400;
     font-size: clamp(2.25rem, 1.7143rem + 2.6786vw, 6rem);
