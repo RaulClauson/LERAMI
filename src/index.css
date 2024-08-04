@@ -1,0 +1,24 @@
+/* ================================================================ */
+/* FONTS */
+/* ================================================================ */
+
+@font-face {
+  font-family: "Sequel";
+  src: url(/public/fonts/SequelSansMediumDisp.ttf)
+}
+@font-face {
+  font-family: "Telegraf";
+  src: url(/public/fonts/PPTelegraf.ttf)
+}
+@font-face {
+  font-family: "Neue";
+  src: url(/public/fonts/PPNeueBitBold.otf)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #020A10 !important;
+}
