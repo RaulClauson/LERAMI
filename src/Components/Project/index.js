@@ -2,7 +2,7 @@ import './Project.css'
 
 const Project = (props) => {
     return(
-        <div className='project col-md-6'>
+        <div className='project col-md-6 ani_visible'>
             <img src={props.imagem} alt={props.acessibilidade} title={props.acessibilidade} className='image_proj'/>
             <p>{props.detalhes}</p>
             <div className='project_title'>

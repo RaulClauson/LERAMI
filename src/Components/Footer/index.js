@@ -1,8 +1,12 @@
 import { TiArrowSortedUp } from "react-icons/ti";
 import './Footer.css'
 import Logo_icon from "../../svgs/Logo/Logo_icon";
+import scrollToSection from '../ScrollTo/index'; // Import the scrollToSection function
 
 const Footer = () => {
+    const handleLinkClick = (id) => {
+        scrollToSection(id);
+      };
     return(
         <footer id='Footer' className='container-fluid'>
             <div className='footer row'>
@@ -11,10 +15,10 @@ const Footer = () => {
                     <div>
                         <p>Sitemap</p>
                         <ul>
-                            <li><a href="#Home">Home</a></li>
-                            <li><a href="#About">Sobre</a></li>
-                            <li><a href="#Projects">Projetos</a></li>
-                            <li><a href="#Team">Integrantes</a></li>
+                            <li><a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} role="link" aria-label="Ir para o início">Home</a></li>
+                            <li><a onClick={() => handleLinkClick('About')} role="link" aria-label="Ir para a sessão Sobre">Sobre</a></li>
+                            <li><a onClick={() => handleLinkClick('Projects')} role="link" aria-label="Ir para a sessão Projetos">Projetos</a></li>
+                            <li><a onClick={() => handleLinkClick('Team')} role="link" aria-label="Ir para a sessão Integrantes">Integrantes</a></li>
                         </ul>
                     </div>
                     <div>
@@ -36,7 +40,7 @@ const Footer = () => {
 					        <input type="email" name="email" placeholder="Email" required></input>
 					        <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
                             <div className="send d-flex flex-wrap">
-                                <button type="submit" id="plane" className="enviar">ENVIAR</button>
+                                <button type="submit" id="plane">ENVIAR</button>
                             </div>
                         </form>
                     </div>
@@ -46,7 +50,7 @@ const Footer = () => {
             <div className='footer_below d-flex flex-column flex-md-row justify-content-md-between p-3'>
                 <p>Agradecemos pela sua visita!</p>
                 <h6>© 2024 LERAMI</h6>
-                <a href="#Home">Voltar para o topo <TiArrowSortedUp/></a>
+                <a onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} role="link" aria-label="Ir para o Início">Voltar para o topo <TiArrowSortedUp/></a>
             </div>
         </footer>
     )

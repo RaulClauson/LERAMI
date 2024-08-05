@@ -40,5 +40,5 @@
     cursor: pointer;
 }
 .members:hover .member:not(:hover){
-    opacity: 0.4;
+    opacity: 0.4 !important;
 }

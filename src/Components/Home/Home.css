@@ -26,7 +26,7 @@
 }
 #Home div h1{
     width: 80%;
-    height: 43%;
+    height: 46%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,9 +37,21 @@
     line-height: auto;
     text-align: center;
     margin: 0;
+    opacity: 0;
      
     color: #ffffff;  
     z-index: 1;  
+    animation: ani_home_title 1s 3.2s forwards cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+@keyframes ani_home_title {
+    0%{
+        margin-top: 10vh;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 .image{
@@ -54,6 +66,27 @@
     background-position: 50% 10%;
     border-radius: 2.5vh;
     z-index: 1;
+    animation: ani_home_image 1s 3.4s forwards cubic-bezier(0.230, 1.000, 0.320, 1.000),
+    ani_home_image2 1s 3.4s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    opacity: 0;
+}
+
+@keyframes ani_home_image {
+    0% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+}
+
+@keyframes ani_home_image2 {
+    0% {
+     bottom: 0;
+    }
+    100% {
+     bottom: 8%;
+    }
 }
 .image_blur{
     width: 80%;
@@ -68,6 +101,8 @@
     border-radius: 2.5vh;
     z-index: 0;
     filter: blur(20vh);
+    animation: ani_home_image 1s 3.4s forwards cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    opacity: 0;
 }
 .blur{
     width: 80%;
@@ -88,8 +123,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: ani_home_scroll 1s 3.6s forwards cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    opacity: 0;
+    transition: 0.5s ease;
 }
-
+@keyframes ani_home_scroll {
+    0% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 0.8;
+    }
+}
+.scroll_down:hover{
+    opacity: 1 !important;
+}
 @media (max-width:555px) {
     #Home div h1{
         text-align: left;

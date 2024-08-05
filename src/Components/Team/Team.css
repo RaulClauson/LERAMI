@@ -42,3 +42,9 @@
     justify-content: space-between;
     transition: 0.3s ease;
 }
+
+@media (max-width:755px) {
+    .members{
+        width: 90%;
+    }
+}

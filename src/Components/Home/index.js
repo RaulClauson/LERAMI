@@ -1,5 +1,6 @@
 import './Home.css';
 import Scroll from '../Home/svgs/Scroll';
+import scrollToSection from '../ScrollTo/index'; // Import the scrollToSection function
 
 import { useEffect } from 'react';
 import gsap from 'gsap';
@@ -7,6 +8,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+
+    const handleLinkClick = (id) => {
+        scrollToSection(id);
+      };
 
     useEffect(() => {
         gsap.fromTo(".image", { scale: 1 }, {
@@ -46,7 +51,7 @@ const Home = () => {
                 <h1>Desenvolvemos soluções que fazem a diferença.</h1>
                 <div className='image'></div>
                 <div className='image_blur'></div>
-                <a href="" className='scroll_down'><Scroll></Scroll></a>
+                <a onClick={() => handleLinkClick('About')} role="link" aria-label="Ir para a sessão Sobre" className='scroll_down'><Scroll></Scroll></a>
             </div>
         </section>
     )

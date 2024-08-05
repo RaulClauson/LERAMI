@@ -24,8 +24,8 @@ const Team = () => {
     return(
         <section id='Team' className="container-fluid">
             <div className="team">
-                <p>LERAMI - Quem Somos</p>
-                <h5>Os Mentes por Trás da LERAMI</h5>
+                <p className='ani_visible'>LERAMI - Quem Somos</p>
+                <h5 className='ani_visible'>Os Mentes por Trás da LERAMI</h5>
             </div>
             <div className='members row'>
                 {member.map(member => 

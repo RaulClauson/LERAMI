@@ -23,8 +23,8 @@ const Projects = (props) => {
     return(
         <section id='Projects' className="container-fluid">
             <div className='title_Projects row'>
-                <h3 className="col-md-6">{props.titulo}</h3>
-                <p className="col-md-6">{props.texto}</p>
+                <h3 className="col-md-6 ani_visible">{props.titulo}</h3>
+                <p className="col-md-6 ani_visible" id="multipleStrings20">{props.texto}</p>
             </div>
             <div className='projects row'>
                 {project.map(project => 

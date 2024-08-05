@@ -60,5 +60,5 @@
     margin: 0px 15px;
 }
 .projects:hover .project:not(:hover){
-    opacity: 0.4;
+    opacity: 0.4 !important;
 }

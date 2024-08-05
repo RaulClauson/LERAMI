@@ -39,6 +39,9 @@
 }
 
 .txt_about{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
     width: 50%;
     position: absolute;
     right: 5%;
@@ -55,8 +58,6 @@
     color: #ffffff;
 }
 .txt_about a{
-    display: flex;
-    justify-content: center;
     width: 165px;
     font-family: Sequel;
     font-style: normal;
@@ -65,11 +66,19 @@
     text-align: center;
     text-decoration: none;
      
-    color: #9d78bb;
+    color: #9d78bb !important;
     
     background-color: #ffffff;
     padding: 17px 40px;
     box-sizing: border-box;
+    transition: 0.3s;
+
+    border: 3px solid #ffffff;
+}
+
+.txt_about a:hover{
+    background-color: transparent;
+    color: #ffffff !important;
 }
 
 @media (max-width:755px) {
