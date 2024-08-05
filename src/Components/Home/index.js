@@ -1,17 +1,19 @@
 import './Home.css';
 import Scroll from '../Home/svgs/Scroll';
-import scrollToSection from '../ScrollTo/index'; // Import the scrollToSection function
+import scrollToSection from '../ScrollTo/index'; 
 
 import { useEffect } from 'react';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+
+// Register ScrollTrigger globally 
+gsap.registerPlugin(ScrollTrigger); 
 
 const Home = () => {
 
     const handleLinkClick = (id) => {
         scrollToSection(id);
-      };
+    };
 
     useEffect(() => {
         gsap.fromTo(".image", { scale: 1 }, {

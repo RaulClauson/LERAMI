@@ -1,6 +1,6 @@
 #Home {
     width: 100%;
-    height: 200dvh;
+    height: 200vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -8,7 +8,7 @@
 }
 #Home .pin {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,5 +1,5 @@
 #Footer{
-    margin-top: 25dvh;
+    margin-top: 25vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,11 +7,11 @@
     position: relative;
     z-index: 4;
     padding: 0;
-    gap: 5dvh;
+    gap: 5vh;
 }
 .footer{
     width: 95%;
-    height: 75dvh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     gap: 1em;
 }
 .footer_container:nth-last-child(2){
-    margin: 10dvh 0vh;
+    margin: 10vh 0vh;
 }
 .footer_container h6{
     font-family: PP Telegraf;
@@ -180,7 +180,7 @@ textarea{
 
 .footer_below{
     width: 95%;
-    height: 7dvh;
+    height: 7vh;
 }
 .footer_below p{
     font-family: PP NeueBit;
@@ -245,7 +245,7 @@ textarea{
         height: auto;
     }
     .footer_below{
-        height: 25dvh;
+        height: 25vh;
         align-items: center !important;
         justify-content: center !important;
         gap: 0.8em;
